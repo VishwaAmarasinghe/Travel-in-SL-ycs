@@ -18,7 +18,7 @@
 section{
     z-index: 2;
 }
-#home{    
+#main-home{    
     padding-top: 80px;
     width: 100%;
     height: 100vh;
@@ -36,7 +36,10 @@ section{
     padding-top: 50px;
     
 }
-#desti-home{
+#contact{
+    padding: 70px;
+}
+#home{
     height: 100vh;
     padding-top: 100px;
     background-image: url('../img/home.jpg');
@@ -228,8 +231,8 @@ right: 100px;}
  .place-description{
     padding: 5px;
 }
-.swiper{
-    padding: 70px;
+.DestinationSwiper{
+    margin-top: 50px;
 }
 .video{
     background-image: url('../img/video.jpg');
@@ -280,4 +283,67 @@ right: 100px;}
 }
 hr{
     border: solid 1.5px;
+}
+.srilanka-map iframe{
+    width: 90%;
+    border-radius: 20px;
+
+}
+.contact{
+    background-image: url("../img/bg-3.png");
+    background-size:contain;
+    background-color: #134e4e;
+    padding: 70px !important;
+    margin-top: 50px !important;
+}
+.contact-detail{
+    color: #fff;
+}
+.get-touch-header{
+    color: #fff;
+}
+.send-message{
+    padding: 5px;
+   
+}
+.form-text{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.text-area{
+    height: 120px;
+    margin-top: 20px;
+}
+.contact-detail{
+    padding: 50px;
+    font-size: 20px;
+}
+
+.follow i{
+    background-color: #ffffff;
+    color: #134e4e;
+    width: 50px;
+    height: 50px;
+padding-top: 15px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.fa-brands:hover{
+    background-color: #0b2323;
+    color: #ffffff;
+}
+.submit-btn{
+    width: 100px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #134e4e;
+    border: none;
+    border-radius: 10px;
+}
+.submit-btn:hover{
+    background-color: #0b2323;
+    color: #ffffff;
 }
