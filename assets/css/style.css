@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     scroll-padding: 80px;
+
 
 }
 .navbar{
@@ -12,8 +15,34 @@
 
 
 }
-.navbar ul li a , .navbar h1{
+.navbar ul li a {
     color: #134e4e !important;
+}
+.logo{
+    width: 150px;
+
+
+}
+.nav-item{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav-item:hover{
+    text-decoration: overline;
+}
+@media (max-width: 992px) {
+    /* Media query for mobile devices (screen width less than or equal to 767px) */
+    .navbar-collapse {
+        height: 100vh;
+    }
+    .navbar{
+        font-size: 30px;
+    }
+    .navbar-nav{
+        align-items: center;
+        margin-top: 50px;
+    }
 }
 section{
     z-index: 2;
@@ -42,7 +71,25 @@ section{
 #home{
     height: 100vh;
     padding-top: 100px;
-    background-image: url('../img/home.jpg');
+    background-image: url('../img/home-desti.jpg');
+    background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
+  font-size: 20px;
+}
+#home-hotel{
+    height: 100vh;
+    padding-top: 100px;
+    background-image: url('../img/home-hotel.jpg');
+    background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
+  font-size: 20px;
+}
+#home-contact{
+    height: 100vh;
+    padding-top: 100px;
+    background-image: url('../img/home-contact.jpg');
     background-size: cover;
   background-repeat: no-repeat;
   padding: 100px;
@@ -55,16 +102,22 @@ section{
     position: absolute;
     z-index: -1;
 }
-.header{
+
+
+.header-white{
     z-index: 1;
-    color: #482121;
+    color: #ffffff;
     font-size: 75px;
     position: relative;
     left: 50%;
     transform: translate(-50%, 20%);
     width: 100%;
     text-align: center;
-   
+    font-family: 'Borel', cursive ;
+    padding-top: 20px;
+}
+.home-description{
+    color: #fff;
 }
 .sl-beauty-img{
     width:90%;
@@ -75,6 +128,7 @@ section{
 }
 .header-discover{
     color: #ffffff;
+    font-family: 'Borel', cursive ;
 }
 .Unique-us{
     padding: 50px;
@@ -84,6 +138,7 @@ section{
 }
 .header-colour{
     color: #482121;
+    font-family: 'Borel', cursive ;
 }
 .header-about{
     position: relative;
@@ -100,10 +155,10 @@ section{
 }
 .about-details{
     padding: 70px !important;
-    padding-bottom: 0px !important;
+    padding-bottom: 50px !important;
 }
 .p{
-    color: #7A3E3E;
+    color: #000000;
     font-size: 22px;
     
 }
@@ -129,16 +184,40 @@ section{
     list-style-type: none;
 }
 .a-2{
+    width: 100%;
     position: relative;
     top: 50px;
     left: -20px;
 }
-
+@media(max-width:669px){
+    .a-2{
+        position: relative;
+    top: 0px;
+    left: 0px;
+    }
+}
 .service-img{
     width: 500px;
     position: relative;
     bottom: 0px;
 
+}
+@media(max-width:636px){
+    .service-img{
+        width: 100%;
+
+    
+    }
+    .header-white{
+        z-index: 1;
+        color: #ffffff;
+        font-size:40px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        width: 100%;
+        text-align: center;
+    }
 }
 .customer{
     width: 100%;
@@ -159,7 +238,7 @@ section{
     top: var(--swiper-navigation-top-offset,98%);
 }
 .swiper-button-next , .swiper-button-prev{
-    color: #134e4e;
+    color: #000000;
 }
 .card-customer{
     height:auto;
@@ -172,7 +251,7 @@ section{
     
 }
 .decoration-1{
-    width: 500px;
+    width: 100px;
     position: absolute;
     right: 20px;
     z-index: 1;
@@ -184,7 +263,9 @@ section{
     height: 150px;
     border-radius: 50%;
     margin: 20px;
-    object-fit: cover;}
+    object-fit: cover;
+
+}
 .customer p{
     font-size: 20px;
 
@@ -194,6 +275,7 @@ section{
     width: 100%;
     height: auto;
     padding: 50px !important;
+    margin-top: 20px !important;
     color: #d8d8d8;
     
 }
@@ -234,6 +316,7 @@ right: 100px;}
 .DestinationSwiper{
     margin-top: 50px;
 }
+
 .video{
     background-image: url('../img/video.jpg');
     background-size: cover;
